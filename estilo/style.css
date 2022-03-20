@@ -1,5 +1,14 @@
 @charset "!UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Sriracha&display=swap');
+
+:root{
+   --font1:Verdana, Geneva, Tahoma, sans-serif;
+   --font2: 'Special Elite', cursive;
+   --font3:'Sriracha', cursive;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -8,20 +17,30 @@
 
 html, body{
     min-height: 100vh;
-    background-color: lightblue;
+    background-color: rgb(255, 255, 255);
 }
 header{
     text-align: center;
     background-color: black;
     color: white;
+    font-family: var(--font2);
 }
 header>h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vw;
 }
 header>p{
     padding-bottom: 50px;   
 }
+div{
+    color: aliceblue;
+    background-color: rgb(75, 75, 75);
+    text-align: center;
+    font:var(--font2);
+    font-weight: bolder;
+}
+
 a{
     color: white;
     text-decoration: none;
@@ -33,9 +52,11 @@ a:hover{
 }
 section{
     padding-top: 10vh;
-    padding-bottom: 10vh; /*Efeito paralax */
+    padding-bottom: 10vh; 
     line-height: 1.5em;
     padding-left: 50px;
+    font-family: var(--font3);
+    font-size: 3vw;
 }
 section.normal{
     background-color: white;
@@ -43,11 +64,35 @@ section.normal{
 }
 section.imagem{
     background-color: aqua;
-    color: black;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.616);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.575);
+    background-attachment: fixed;
 }
 section.imagem>p{
-    width: 300px;
-    background-color: rgba(0, 0, 0, 0.281);
+    padding: 8px;
+    display: inline-block; /* se adapta oa tamanho da caixa */
+    background-color: rgba(0, 0, 0, 0.548);
+}
+section#img01{
+    background-image: url('../imagens/relogio01.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+section#img02{
+    background-image: url('../imagens/chuva2.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+section#img03{
+    background-image: url('../imagens/idoso3.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+section#img04{
+    background-image: url('../imagens/flore4.jpg');
+    background-position: center center;
+    background-size: cover;
 }
 footer{
     margin: 10px 0px 10px 0px;
